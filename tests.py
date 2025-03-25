@@ -102,6 +102,3 @@ class StellarBurgersTests(unittest.TestCase):
         self.wait.until(EC.visibility_of_element_located((By.XPATH, CONSTRUCTOR_BUNS_SECTION)))
         buns_section_visible = self.driver.find_element(By.XPATH, CONSTRUCTOR_BUNS_SECTION).is_displayed()
         self.assertTrue(buns_section_visible)
-
-if __name__ == '__main__':
-    unittest.main()
